@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Mustafa's Hallowen Night</title>
+</head>
+<body>
+    <section class="header w-100">
+        
+        <img src="./images/stars.png" id="stars">
+        <img src="./images/moon.png" id="moon">
+        <h2 id="text" class="text-white">MUSTAFA'S MOVIE NIGHT</h2>
+        <img class="img-fluid"  src="./images/2.png" id="hallowen-behind">
+        <a href="#home" id="btn" class="btn btn-warning fs-5">Welcome</a>
+        <img class="img-fluid"  src="./images/1.png" id="hallowen-front">
+        
+    </section>
+
+    <section class="add-movie container-fluid py-5">
+      <div class="row text-white">
+        <div class="col-8 bg-transparent mx-auto">
+          <div class="row ">
+            <div class="col-lg-6 d-flex justify-content-center my-2">
+              <span class="m-2">Title</span>
+              <input type="text" id="title" class="form-control bg-transparent " placeholder="TITLE">
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center my-2">
+              <span class="m-2">Director</span>
+              <input type="text" id="director" class="form-control bg-transparent"  placeholder="DIRECTOR">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex align-items-center my-2">
+              <span class="m-2">Summary</span>
+              <textarea id="summary" class="form-control bg-transparent" cols="10" rows="3"  placeholder="SUMMARY"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-5 d-flex align-items-center my-2">
+              <span class="m-2">Banner</span>
+              <input type="text" id="banner" class="form-control bg-transparent"  placeholder="BANNER">
+            </div>
+            <div class="col-lg-7 d-flex align-items-center my-2">
+              <span class="" id="rdate">Release Date</span>
+              <input type="date" id="release-date" class="form-control w-100 bg-transparent"  placeholder="RELEASE DATE" >
+            </div>
+            <div class="col-lg-10 mx-auto d-flex  align-items-center my-2">
+              <span class="m-2">Category</span>
+              <!-- <input type="text" id="category" class="form-control bg-transparent"  placeholder="CATEGORY"> -->
+              <select class="custom-select form-control bg-transparent text-white" id="category">
+                <option selected>Choose...</option>
+                <option  value="Aksiyon">Aksiyon</option>
+                <option value="Bilim Kurgu">Bilim Kurgu</option>
+                <option value="Dram">Dram</option>
+                <option value="Gerilim">Gerilim</option>
+                <option value="Komedi">Komedi</option>
+                <option value="Korku">Korku</option>
+                <option value="Macera">Macera</option>
+                <option value="Psikolojik">Psikolojik</option>
+                <option value="Savaş">Savaş</option>
+              </select>
+              <span class="m-2">id</span>
+              <input id="id" type="text" class="form-control bg-transparent text-white" disabled>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center my-5">
+            <button id="add-movie" class="btn btn-warning w-50 ">Add Movie</button>
+            <button id="update-movie" class="btn btn-warning w-50 d-none ">Update Movie</button>
+        </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+
+    <!-- movies -->
+    <section id="home" class="bg-info container-fluid"  >
+      <select id="kategori-sec" class="custom-select form-control bg-transparent ms-auto w-25 text-white " >
+        <option selected value="all">Kategori Seç</option>
+        <option  value="Aksiyon">Aksiyon</option>
+        <option value="Bilim Kurgu">Bilim Kurgu</option>
+        <option value="Dram">Dram</option>
+        <option value="Gerilim">Gerilim</option>
+        <option value="Komedi">Komedi</option>
+        <option value="Korku">Korku</option>
+        <option value="Macera">Macera</option>
+        <option value="Psikolojik">Psikolojik</option>
+        <option value="Savaş">Savaş</option>
+      </select>
+       <div class="row mx-5 py-2 " id="row" style="min-height: 30rem;">
+
+        <!-- modal -->
+       
+
+       </div>
+    </section>
+  
+
+ <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+ <script src="parallax.js"></script>
+ <script src="app.js"></script>
+</body>
+</html>
